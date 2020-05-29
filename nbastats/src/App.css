@@ -1,0 +1,33 @@
+.TopBar{
+  min-height: 5rem;
+  background-color: #1832db;
+  align-items: center;
+  display: flex;
+}
+.SearchForm{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.Search{
+  margin-left: auto;
+  background-color: white;
+  border: solid grey 1px;
+  min-height: 2rem;
+  font-size: 1rem;
+}
+.SearchButton{
+  min-height: 2.3rem;
+  min-width: 2rem;
+  background-color: red;
+  border: solid grey 1px;
+  color: white;
+  margin-right: auto;
+}
+.SearchButton:hover{
+  background-color: lightcoral;
+}
+.player{
+  
+}
