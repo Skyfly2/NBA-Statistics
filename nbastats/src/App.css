@@ -1,6 +1,6 @@
 .TopBar{
   min-height: 5rem;
-  background-color: #1832db;
+  background-color: lightblue;
   align-items: center;
   display: flex;
 }
@@ -13,21 +13,44 @@
 .Search{
   margin-left: auto;
   background-color: white;
-  border: solid grey 1px;
-  min-height: 2rem;
+  border: solid lightgrey 1px;
+  height: 2rem;
   font-size: 1rem;
+  margin-right: .5rem;
+  border-radius: 10px;
+  color: grey;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .SearchButton{
-  min-height: 2.3rem;
+  height: 2.15rem;
   min-width: 2rem;
-  background-color: red;
-  border: solid grey 1px;
+  background-color: lightcoral;
+  border: solid lightgrey 1px;
   color: white;
   margin-right: auto;
+  border-radius: 10px;
 }
 .SearchButton:hover{
-  background-color: lightcoral;
+  background-color: lightgrey;
 }
 .player{
-  
+  box-shadow: 5px 5px lightgrey;
+  border: solid 1px lightgrey;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-radius: 20px;
+  margin-top: 5%;
+}
+.playerInfo{
+  font-size: 5rem;
+  justify-content: space-around;
+}
+.playerPic{
+  border-radius: 70%;
+  border: solid gray 1px;
+  margin-top: 1rem;
 }
