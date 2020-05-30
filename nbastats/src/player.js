@@ -1,6 +1,7 @@
 import React from 'react';
 import HowToUse from './HowToUse';
 
+
 const NBA = require('nba');
 const nba = require('nba-api-client');
 
@@ -20,14 +21,20 @@ function Player(props) {
         let teamID = id.TeamID;
         console.log(id);
         console.log(playerID);
+        NBA.stats.playerInfo({ PlayerID: playerID }).then(console.log);
+
         return (
             <div className="player">
                 <div className="playerInfo">
-                    <img className="playerPic" src={nba.getPlayerHeadshotURL({ PlayerID: playerID, TeamID: teamID })} />
-                    {player.firstName + ' ' + player.lastName}
-                    <div className="statBlock">
-                        {playerID}
+
+                    <div>
+                        <img className="playerPic" src={nba.getPlayerHeadshotURL({ PlayerID: playerID, TeamID: teamID })} />
+                        {player.firstName + ' ' + player.lastName}
                     </div>
+                    <div className="statBlock">
+                        {}
+                    </div>
+
                 </div>
             </div >
         );
